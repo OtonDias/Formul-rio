@@ -1,0 +1,135 @@
+<DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta chaset"UTF-8">
+	<title>Formulário</title>
+  <style>
+            form {
+                border: 10px solid black;
+            }
+			 textarea {
+                vertical-align: top;
+                height: 5em;
+                resize: vertical;
+            }
+            button {
+                margin-left: .5em;
+            }
+   </style>
+</head>
+<body>
+<a href="index.html">Inicio</a>
+<a href="formulario.html">Formulário</a>
+
+ <form>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="usuario_nome" />
+            </div>
+            <div>
+                <label for="Data de Nascimento">Data de Nascimento:</label>
+                <input type="text" id="Data de Nascimento" name="Data de Nascimento" />
+            </div>
+			<div>
+             <p>Sexo: <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label>
+		<input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+		<input type="radio" name="tSexo" id="cNao"><label for="cNao">Prefiro não informar</label>
+		</p>
+            </div>
+			<div>
+                <label for="Endereço">Endereço:</label>
+                <input type="text" id="Endereço" name="Endereço" />
+            </div>
+			<div>
+                <label for="Logradouro">Logradouro:</label>
+                <input type="text" id="Logradouro" name="Logradouro" />
+            </div>
+			<div>
+                <label for="Bairro">Bairro:</label>
+                <input type="text" id="Bairro" name="Bairro" />
+            </div>
+			<div>
+                <label for="Cidade">Cidade:</label>
+                <input type="text" id="Cidade" name="Cidade" />
+            </div>
+			<div>
+             <p><label for="cEst">UF</label>
+			 <select name="tEst" id="cEst">
+				<option>DF</option>
+				<option>SP</option>
+				<option>RJ</option>
+				<option>PI</option>
+				</select>
+			</div>
+			<div>
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email" />
+            </div>
+		<div class="button">
+          <button type="submit">Limpar</button><button type="submit">Enviar</button>
+		</div>
+        </form>
+		
+		<h1>Fotmulário</h1>
+		<form>
+		<fieldset id="usuario">
+		<legend>Dados Pessoais</legend>
+		<div>
+		<label for="Nome">Nome:</label>
+                <input type="text" id="Nome" name="Nome" />
+		</div>
+		<div>
+		<label for="Data de Nascimento">Data de Nascimento:</label>
+                <input type="date" id="cNasc" name="tNasc" />
+		</div>
+		<div>
+		<label for="E-mail">E-mail:</label>
+                <input type="text" id="E-mail" name="E-mail" />
+		</div>
+		<div>
+		<label for="Telefone">Telefone:</label>
+                <input type="text" id="Telefone" name="Telefone" />
+		</div>
+		</fieldset>
+		
+		<fieldset id="dados">
+		<legend>Dados Academicos</legend>
+		<div>
+		 <p><label for="cEst">Curso</label>
+			 <select name="tEst" id="cEst">
+				<option>ADS</option>
+				<option>GTI</option>
+				</select>
+		</div>
+		<div>
+		<p>Semestre: 
+		<input type="radio" name="tSem" id="c1°"><label for="cMasc">1°</label>
+		<input type="radio" name="tSem" id="c2°"><label for="cFem">2°</label>
+		<input type="radio" name="tSem" id="c3°"><label for="cNao">3°</label>
+		<input type="radio" name="tSem" id="c4°"><label for="cMasc">4°</label>
+		<input type="radio" name="tSem" id="c5°"><label for="cMasc">5°</label>
+		</p>
+		</div>
+		</fieldset>
+		
+		
+		<fieldset id="Trabalho">
+		<div>
+		<label for="trab">Trabalha:</label>
+                <input type="radio" id="ctran" name="ttrab" />
+		</div>
+		<div>
+		<label for="Data de Nascimento">Local de trabalho</label>
+                <input type="text" id="Data de Nascimento" name="Data de Nascimento" />
+		</div>
+		<div>
+		<label for="msg">Descreva experiencia</label>
+                <textarea id="msg" name="usuario_msg"></textarea>
+		</div>
+		</fieldset>
+		<div class="button">
+          <button type="submit">Gravar</button><button type="submit">Limpar</button>
+		</div>
+		</form>
+</body>
+</html>
